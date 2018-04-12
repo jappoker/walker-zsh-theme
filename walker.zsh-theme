@@ -5,8 +5,8 @@
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="dui"
-ZSH_THEME_GIT_PROMPT_CLEAN="budui"
+ZSH_THEME_GIT_PROMPT_DIRTY=""
+ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} ✚"
 ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[blue]%} ✹"
@@ -23,7 +23,7 @@ local bottom_tab="%{$fg[blue]%}╰〢%{$reset_color%}"
 local barline="%{$fg[blue]%}────%{$reset_color%}"
 local hist_no="${blue_op}%{$fg[yellow]%}%h${blue_cp}"
 local time_display="${blue_op}%{$fg[yellow]%}%t${blue_cp}"
-local day_display="${blue_op}%{$fg[yellow]%}$(date +%a%b%d)${blue_cp}"
+local day_display="${blue_op}%{$fg[yellow]%}$(date +%a,%b%d)${blue_cp}"
 
 if [ $USER = $DEFAULT_USER ]; then
 		local user_host="${blue_op}%{$fg_bold[cyan]%}%n$(git_prompt_info)$(git_prompt_status)%{$reset_color%}${blue_cp}"
